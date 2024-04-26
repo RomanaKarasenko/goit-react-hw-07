@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import iziToast from "izitoast";
 import { useId } from "react";
 import { selectContacts } from "../../redux/selector";
-import { addContact } from "../../redux/contactsSlice";
+import { addContact } from "../../redux/contactsApi";
 import "izitoast/dist/css/iziToast.min.css";
 import styles from "./ContactForm.module.css";
 
@@ -21,7 +21,7 @@ const ContactForm = () => {
       iziToast.error({
         title: "Error",
         message: `${correctName} is already in contact!`,
-        position: "topRight",
+        position: "topLeft",
       });
       return;
     }
