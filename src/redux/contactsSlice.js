@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import { fetchContacts, addContact, deleteContact } from './contactsApi';
+import { fetchContacts, addContact, deleteContact } from "./contactsOps";
 
 const INITIAL_STATE = {
   items: [],
@@ -18,7 +18,7 @@ const handleRejected = (state, action) => {
 };
 
 const contactsSlice = createSlice({
-  name: 'contacts',
+  name: "contacts",
   initialState: INITIAL_STATE,
   extraReducers: (builder) => {
     builder
@@ -47,5 +47,5 @@ const contactsSlice = createSlice({
       .addCase(deleteContact.rejected, handleRejected);
   },
 });
-  
+
 export const contactsReducer = contactsSlice.reducer;
