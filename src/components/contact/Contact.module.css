@@ -22,7 +22,7 @@
 .contactStyle ul li svg {
   margin-right: 10px;
   font-size: 20px;
-  color: #cfb51e; /* золотий колір */
+  color: #cfb51e;
 }
 
 .contactStyle ul li p {
@@ -31,7 +31,7 @@
 
 .deleteButton {
   background-color: #000;
-  color: #cfb51e; /* золотий колір */
+  color: #cfb51e;
   border: none;
   border-radius: 5px;
   padding: 8px 12px;
@@ -39,5 +39,5 @@
 }
 
 .deleteButton:hover {
-  background-color: #333; /* темно-сірий колір */
+  background-color: #333;
 }
